@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+
+  <div class="leftSideOfPage">
+    <div class="leftSideHeader">
+      Learn to code by watching others
+    </div>
+
+    <div class="leftSideDescription">
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+      but understanding how developers think is invaluable.
+    </div>
+  </div>
+
+
+
+  <div class="rightSideOfPage">
+    <div class="rightSideHeader">
+      <div class="rightSideHeaderBolded">Try it free 7 days</div> 
+      then $20/mo. thereafter
+    </div>
+    <div class="rightSideBox">
+      <form class="inputDataForm" action="userData" method="post">
+
+        <div class="firstNameContainer">
+          <div class="inputWrapper">
+            <input type="text" id="firstName" placeholder="First Name" />
+            <img src="./images/icon-error.svg" alt="First Name Icon" class="input-icon">
+            <small></small>
+          </div>
+        </div>
+        
+        <div class="lastNameContainer">
+          <div class="inputWrapper">
+            <input type="text" id="lastName" placeholder="Last Name" />
+            <img src="./images/icon-error.svg" alt="Last Name Icon" class="input-icon">
+            <small></small>
+          </div>
+        </div>
+      
+        <div class="emailAddressContainer">
+          <div class="inputWrapper">
+            <input type="text" id="emailAddress" placeholder="Email Address" />
+            <img src="./images/icon-error.svg" alt="Email Icon" class="input-icon">
+            <small></small>
+          </div>
+        </div>
+      
+        <div class="passwordContainer">
+          <div class="inputWrapper">
+            <input type="password" id="password" placeholder="Password" />
+            <img src="./images/icon-error.svg" alt="Password Icon" class="input-icon">
+            <small></small>
+          </div>
+        </div>
+      </form>
+
+      <button class="claimYourFreeTrialButton">
+        CLAIM YOUR FREE TRIAL
+      </button>
+
+      <div class="trialButtonDisclaimer">
+        By clicking the button, you are agreeing to our <a href="google.com">
+          Terms and Services
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

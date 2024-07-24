@@ -1,0 +1,159 @@
+body {
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.leftSideOfPage {
+  margin-left: 15%;
+  margin-top: 45%;
+}
+
+.leftSideHeader {
+  font-size: xx-large;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.leftSideDescription {
+  color: white;
+  font-size: 12px;
+}
+
+.rightSideOfPage {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15%;
+}
+
+.rightSideHeader {
+  display: flex;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 20%;
+  margin-bottom: 3%;
+
+  justify-content: center;
+}
+
+.rightSideHeaderBolded {
+  font-weight: 700;
+  padding-right: 1%;
+}
+
+.rightSideBox {
+  background-color: white;
+  padding: 10%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputDataForm {
+  width: 100%;
+}
+
+input {
+  padding: 3%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+  font-weight: 700;
+  width: 93%;
+}
+
+.claimYourFreeTrialButton {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  border: 0px;
+
+  padding: 3%;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 5px 5px rgba(8, 138, 88, 0.603);
+}
+
+.trialButtonDisclaimer {
+  font-size: 9px;
+  color: rgb(192, 192, 192);
+  margin-top: 4%;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(19, 87%, 69%);
+  font-weight: 700;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputWrapper input {
+  padding-right: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputWrapper .input-icon {
+  position: absolute;
+  right: 10px;
+  top: 32%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.inputWrapper small {
+  position: absolute;
+  padding-top: 10%;
+  right: 0;
+  color: red;
+  display: none;
+}
+
+.error {
+  margin-bottom: 6%;
+}
+
+.error small{
+  margin-top: -12%;
+}
+
+@media (max-width: 560px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin-top: -25%;
+  }
+
+  .leftSideOfPage {
+    align-self: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  .rightSideOfPage {
+    align-self: center;
+    padding: 5%;
+    width: 90%;
+  }
+}
